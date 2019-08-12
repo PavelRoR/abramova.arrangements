@@ -1,0 +1,76 @@
+#how
+	@extend #what
+.players-title
+	width 100%
+	max-width 270px
+	margin 0 auto 50px
+	font-size: 20px
+	border: 2px dotted #936280
+	text-align: center
+	padding 10px
+	background-color #fff
+.player
+	&:before
+		content: ''
+		position: absolute
+		display block
+		height 1px
+		width: 200px
+		border-top: 2px dotted #936280
+	&-1
+		&:before
+			transform: rotate(-15deg)
+			top: -40px;
+			right: -40px;
+	&-2
+		&:before
+			width 30px
+			transform: rotate(90deg)
+			top -20px
+			left 0
+			right 0
+			margin 0 auto
+	&-3
+		&:before
+			transform: rotate(15deg)
+			top: -40px;
+			left: -40px;
+	&-text
+		position relative
+		span
+			font-family: GeB
+			text-decoration: underline
+			&+span
+				text-decoration: none
+.course
+	padding 40px 30px
+	border: 3px dashed #936280
+	position relative
+	margin 50px 0
+	&:before
+		content: ''
+		display block
+		position: absolute
+		width 82px
+		height 82px
+		border-radius: 50px
+		top -40px
+		left -40px
+		background-image url(../img/icons/blocknote.png)
+		background-repeat no-repeat
+		background-position: center
+	.general-text
+		margin-bottom: 18px
+.how-subtitle
+	text-align: center
+	font-size: 22px
+	font-family: GeB
+	margin-bottom: 35px
+.general-text-iconed
+	padding-left: 100px
+	background-image url(../img/icons/dialog.png)
+	background-repeat no-repeat
+	background-position: left center
+	background-size contain
+	&-2
+		background-image url(../img/icons/loupe.png)
