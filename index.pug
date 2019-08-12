@@ -1,0 +1,35 @@
+-var head_url = 'https://abramova.mastervision.su/arrangements/';
+-var head_title = '«Универсальный метод решения любых проблем - полевое исцеление»';
+-var head_description = 'Автор: Жана Абрамова';
+-var head_img = 'img/banner.jpg';
+-var styles = 'css/styles.min.css';
+-var fav_ico = 'favicon.ico';
+-var fav_png = 'favicon.png';
+mixin gt(cl, h3)
+	h3.general-title(class= cl)
+		span= h3
+mixin gtw(cl, h3)
+	h3.general-title.general-title-white(class= cl)
+		span= h3
+
+<!DOCTYPE html>
+html(lang="ru")
+	head
+		include pug/head
+		include pug/scripts/head_scripts
+	body
+		include pug/scripts/body_top_scripts
+		include pug/header
+		include pug/main/1.main.pug
+		include pug/main/2.what.pug
+		include pug/main/3.for.pug
+		include pug/main/4.how.pug
+		include pug/main/5.get.pug
+		include pug/main/6.advants.pug
+		include pug/main/7.prices.pug
+		include pug/main/8.author.pug
+		include pug/main/9.revs.pug
+		include pug/main/10.footer.pug
+		include pug/scripts
+		//- include pug/scripts/callback
+		include pug/scripts/body_bottom_scripts

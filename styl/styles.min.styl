@@ -1,0 +1,170 @@
+Ge = 'Georgia', serif
+GeB = 'GeorgiaBold', serif
+
+@font-face {
+	font-family: 'georgia';
+	src: url('../fonts/georgia.eot');
+	src: url('../fonts/georgia.eot') format('embedded-opentype'),
+		 url('../fonts/georgia.woff2') format('woff2'),
+		 url('../fonts/georgia.woff') format('woff'),
+		 url('../fonts/georgia.ttf') format('truetype'),
+		 url('../fonts/georgia.svg#georgia') format('svg');
+	font-display: fallback;
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'georgiaBold';
+	src: url('../fonts/georgiaBold.eot');
+	src: url('../fonts/georgiaBold.eot') format('embedded-opentype'),
+		 url('../fonts/georgiaBold.woff2') format('woff2'),
+		 url('../fonts/georgiaBold.woff') format('woff'),
+		 url('../fonts/georgiaBold.ttf') format('truetype'),
+		 url('../fonts/georgiaBold.svg#georgiaBold') format('svg');
+	font-display: fallback;
+	font-weight: bold;
+	font-style: normal;
+}
+
+
+@import '../css/_css/bootstrap.min.css'
+
+*
+	margin 0
+	padding 0
+	outline none
+body
+	background-color #fff
+	color: #2a251d
+	font-size: 18px
+	font-family: Ge
+	line-height: 30px
+a
+	color: #fefefe
+	&:focus
+		outline: 0
+	&:hover
+		text-decoration none
+h1,h2,h3,h4,h5,h6
+	font-weight normal
+	margin 0
+button
+	border none
+section
+header
+footer
+	width 100%
+	display block
+.video-wrapper
+	margin 0 auto
+	position relative
+	width 100%
+	&:before
+		content ''
+		height 0
+		padding-top 56.25%
+		display block
+	&:after
+		content: ''
+		display block
+		position: absolute
+		top: 0
+		left 0
+		right 0
+		width: 100%
+		height 70px
+	img,
+	iframe
+		position absolute
+		width 100%
+		height 100%
+		display block
+		background-color #000
+		border-radius 3px
+		border: 0
+		top 0
+		left 0
+		right 0
+		bottom 0
+		cursor pointer
+.button
+	display block
+	border 1px solid rgb(73, 24, 62);
+	background-color: rgb(246, 196, 98);
+	width 100%
+	max-width: 574px;
+	min-height: 52px;
+	padding 10px
+	margin 0 auto
+	text-align: center
+	font-family: GeB
+	color: rgb(73, 24, 62);
+	text-transform: uppercase;
+	text-decoration: none
+	transition: all .5s ease
+	&:focus
+		text-decoration: none
+		color rgb(73,24,62)
+	&:hover
+		text-decoration: none
+		color rgb(246, 196, 98);
+		background-color: rgb(73, 24, 62);
+.general-title
+	text-align: center
+	margin: 50px 0
+	font-size: 26px;
+	font-family: GeB
+	color: rgb(73, 24, 62);
+	line-height: 2.2
+	position relative
+	&:before
+	&:after
+	span:before
+	span:after
+		content: ''
+		display block
+		position: absolute
+		width 37px
+		height 18px
+		border-width: 4px
+		border-color: #71044E
+	&:before
+		top 0
+		left 0
+		border-top-style: solid
+		border-left-style: solid
+	&:after
+		bottom:  0
+		left 0
+		border-bottom-style: solid
+		border-left-style: solid
+	span:before
+		top 0
+		right 0
+		border-top-style: solid
+		border-right-style: solid
+	span:after
+		bottom:  0
+		right 0
+		border-bottom-style: solid
+		border-right-style: solid
+.general-title-white
+	color #fbf1f9
+	&:before
+	&:after
+	span:before
+	span:after
+		border-color: #fbf1f9
+
+@import 'main/0.header'
+@import 'main/1.main'
+@import 'main/2.what'
+@import 'main/3.for'
+@import 'main/4.how'
+@import 'main/5.get'
+@import 'main/6.advants'
+@import 'main/7.prices'
+@import 'main/8.author'
+@import 'main/9.revs'
+@import 'main/10.footer'
+@import 'main/11.medias'
