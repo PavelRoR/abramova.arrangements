@@ -1,0 +1,49 @@
+#prices
+	@extend #for
+	padding 70px 0 60px
+.packet
+	width 100%
+	max-width 545px
+	margin 0 auto
+	border: 3px dashed #ffffff
+	padding 40px
+	position relative
+	&:before
+		content: ''
+		display block
+		position: absolute
+		width 87px
+		height 87px
+		border-radius: 50px
+		top -43px
+		left -43px
+		background-repeat no-repeat
+		background-position: center
+	&-1
+		margin-left: 0
+		&:before
+			background-image url(../img/icons/target.png)
+	&-2
+		margin-right: 0
+		&:before
+			background-image url(../img/icons/people.png)
+.packet-body
+	min-height 475px
+	&-title
+		font-size: 22px;
+		font-family: GeB
+		margin-bottom: 40px
+		color #fff
+		text-align: center
+.packet-footer
+	.general-text
+		font-family: GeI
+	&-aftertitle
+		text-align: center
+		font-size: 26px
+		color #f6c462
+		margin-bottom: 30px
+		span
+			display block
+			font-size: 34px
+			font-family: GeB
