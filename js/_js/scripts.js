@@ -1,6 +1,14 @@
 //@prepros-prepend jquery-2.1.1.min.js
 
+var isIE = false || !!document.documentMode;
 
+if (isIE) {
+    let head = document.getElementsByTagName("head")[0],
+        link = document.createElement("link");
+    link.rel = "stylesheet";
+    link.href = "css/ie.min.css";
+    head.appendChild(link);
+}
 $(document).ready(function () {
     /* Якорь */
     $(function () {
