@@ -1,10 +1,25 @@
 #main
 	padding 70px 0 50px
-	background-color: #908F8D
+	background-color: #936280
 	background-image url(../img/backgrounds/main_bg.jpg)
 	background-repeat no-repeat
-	background-position: center top -80px
+	background-position: center
 	background-size: cover
+	position relative
+	&:before
+		content: ''
+		position: absolute
+		top 0
+		left 0
+		right 0
+		bottom 0
+		width 100%
+		height 100%
+		background-color: rgba(#936280, .8)
+		z-index 0
+	.container
+		position relative
+		z-index 9
 .main-title
 	color: #fff
 	font-size: 36px
@@ -20,7 +35,8 @@
 		line-height: 0.9;
 .main-subtitle
 	font-size: 24px
-	color: #49183e
+	// color: #49183e
+	color: #fff
 	margin 30px 0 40px
 	span
 		display: inline-block
